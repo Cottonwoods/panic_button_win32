@@ -1,0 +1,53 @@
+html {
+  background-color: #000;
+
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  border-radius: 9999px;
+  background-color: #f00;
+
+  position: relative;
+  margin: 0 auto;
+
+  width: 40%;
+}
+  .container:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  .container span {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    z-index: 1;
+  }
+
+.panic {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+  font-size: 8vw;
+  text-align: center;
+  position: absolute;
+}
+
+.vertical-align-outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.vertical-align-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
