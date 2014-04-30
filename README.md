@@ -8,6 +8,7 @@ Panic button to open TxSSC dashboard fullscreen
 python3.4
 pywin32
 django1.6
+chrome
 ```
 
 ##Running
