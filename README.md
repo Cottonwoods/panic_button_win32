@@ -13,6 +13,6 @@ django1.6
 
 Start the server with:
 
-'''
+```
 python manage.py runserver 0.0.0.0:80 --insecure
-'''
+```
