@@ -16,7 +16,7 @@ def panic(request):
     try:
       handle = win32api.OpenProcess(win32con.PROCESS_ALL_ACCESS, False, pid)
       exe = win32process.GetModuleFileNameEx(handle, 0)
-      if exe.lower().contains('chrome.exe'):
+      if exe.lower().find('chrome.exe') != -1:
         win32api.TerminateProcess(int(handle), -1)
     except:
       pass
