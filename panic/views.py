@@ -10,8 +10,8 @@ def index(request):
 
 def panic(request):
   def exit_callback(hwnd, param):
-    win32api.TerminateProcess(hwnd, 0)
-    win32api.CloseHandle(hwnd)
+    # win32api.TerminateProcess(hwnd, 0)
+    # win32api.CloseHandle(hwnd)
     return True
   win32gui.SystemParametersInfo(win32con.SPI_SETFOREGROUNDLOCKTIMEOUT, 0, win32con.SPIF_SENDWININICHANGE | win32con.SPIF_UPDATEINIFILE)
   win32gui.EnumWindows(exit_callback, None)
